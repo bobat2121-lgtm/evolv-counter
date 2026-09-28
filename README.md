@@ -18,7 +18,7 @@ The automated collector waits for the page's `awss_counter_series` POST, validat
 
 Each row's `collectionMethod` is `cloudflare_browser` for automatic collection or `interactive_browser` for a manually captured display reading. Source anchors and their timestamps are blank/null when unavailable for an interactive reading. These missing values are never replaced with invented anchors, zeros, or dates. The initial interactive baseline is added directly through authenticated database administration; there is no public import endpoint.
 
-The interactive baseline observed at **2026-09-28 15:13:39.140 UTC** contained **5,130,323,691 people** and **32,756,288 bags**. Its source feed anchors were not captured, so those cells remain blank. This is one observed snapshot, not a successful Cloudflare collection.
+The private workbook contains one interactive baseline. Its source feed anchors were not captured, so those cells remain blank. This is one observed snapshot, not a successful Cloudflare collection.
 
 ## Endpoints
 
