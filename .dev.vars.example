@@ -1,0 +1,4 @@
+# Copy to .dev.vars and replace with two distinct random secrets (at least 32 characters each).
+# In production: wrangler secret put DOWNLOAD_TOKEN / wrangler secret put ADMIN_TOKEN
+DOWNLOAD_TOKEN="replace-download-token-with-a-random-secret-at-least-32-characters"
+ADMIN_TOKEN="replace-admin-token-with-a-different-random-secret-at-least-32-characters"

@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "evolv-counter",
+  "account_id": "1ee37b1b004176dd6d444e406f49588b",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-28",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": { "SOURCE_ACCESS_STATUS": "blocked_by_source" },
+  "browser": { "binding": "BROWSER" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "evolv-screening-counts",
+      "database_id": "6e9fecfd-5383-403e-811e-42c2623af288",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": { "crons": ["0 */12 * * *"] },
+  "observability": { "enabled": true, "head_sampling_rate": 1 }
+}

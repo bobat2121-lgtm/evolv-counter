@@ -1,0 +1,24 @@
+{
+  "name": "evolv-counter-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "types": "wrangler types",
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "dry-run": "wrangler deploy --dry-run --outdir dist",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "1.4.0",
+    "exceljs": "4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "typescript": "7.0.2",
+    "wrangler": "4.142.0"
+  },
+  "engines": { "node": ">=22.18" }
+}
